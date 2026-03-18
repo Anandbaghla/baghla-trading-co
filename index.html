@@ -218,7 +218,8 @@
                     <p>📧 anandbaghla2003@gmail.com</p>
                 </div>
             </div>
-            <form onsubmit="handleInquiry(event)">
+            <form action="https://formspree.io/f/anandbaghla2003@gmail.com" method="POST" onsubmit="handleInquiry(event)">
+                
                 <input type="text" id="name" placeholder="Name / Business Name" required>
                 <input type="tel" id="phone" placeholder="Mobile Number" required>
                 <select id="category">
@@ -227,7 +228,7 @@
                     <option>Price Quote Request</option>
                 </select>
                 <textarea id="msg" placeholder="Items and quantities (e.g., 5 Quintal Sugar)..." style="height: 120px;"></textarea>
-                <button herf="anandbaghla2003@gmail.com" type="submit" class="submit-btn">SEND REQUEST</button>
+                <button type="submit" class="submit-btn">SEND REQUEST</button>
             </form>
         </div>
     </section>
