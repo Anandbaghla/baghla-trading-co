@@ -219,15 +219,15 @@
                 </div>
             </div>
             <form action="https://formspree.io/f/anandbaghla2003@gmail.com" method="POST" onsubmit="handleInquiry(event)">
-                <input type="text" id="email" placeholder="email" required>
-                <input type="text" id="name" placeholder="Name / Business Name" required>
-                <input type="tel" id="phone" placeholder="Mobile Number" required>
-                <select id="category">
+                <input type="text" name="email" placeholder="Email" required>
+                <input type="text" name="name" placeholder="Name / Business Name" required>
+                <input type="tel" name="phone" placeholder="Mobile Number" required>
+                <select name="category">
                     <option>Wholesale Order</option>
                     <option>Retail Order</option>
                     <option>Price Quote Request</option>
                 </select>
-                <textarea id="msg" placeholder="Items and quantities (e.g., 5 Quintal Sugar)..." style="height: 120px;"></textarea>
+                <textarea name="msg" placeholder="Items and quantities (e.g., 5 Quintal Sugar)..." style="height: 120px;"></textarea>
                 <button type="submit" class="submit-btn">SEND REQUEST</button>
             </form>
         </div>
