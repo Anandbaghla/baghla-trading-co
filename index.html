@@ -124,26 +124,6 @@
             <a href="tel:6283098880" style="background:white; color:var(--dark-steel); padding:16px 40px; border-radius:50px; text-decoration:none; font-weight:bold;">📞 Call Now</a>
         </div>
     </header>
-    <section style="background: #1a1a1a; padding: 50px 20px; text-align: center; border-bottom: 2px solid #ffd700;">
-    <div style="max-width: 900px; margin: 0 auto;">
-        
-        <h2 style="color: #ffd700; font-family: 'Arial Black', sans-serif; text-transform: uppercase; margin-bottom: 10px;">
-            Experience the Purity of Baghla Trading Co.
-        </h2>
-        <p style="color: #ffffff; font-size: 1.1rem; margin-bottom: 30px; opacity: 0.9;">
-            See why thousands of families trust our premium Karyana & Grocery items.
-        </p>
-
-        <div style="box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 3px solid #333; border-radius: 12px; overflow: hidden;">
-            <video width="100%" height="auto" controls poster="video-thumbnail.jpg">
-                <source src="https://gemini.google.com/share/7e4e81e57140" type="video/mp4" autoplay muted loop playsinline>
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
-    </div>
-</section>
-
     <section class="trust-bar">
         <div class="trust-item">
             <i class="fas fa-certificate"></i>
@@ -165,6 +145,12 @@
     <section class="section" id="catalog">
         <h2 class="section-title">The Wholesale & Retail Portfolio</h2>
         <div class="product-grid">
+            <div class="product card">
+                <img src="https://5.imimg.com/data5/IOS/Default/2021/1/DX/IQ/IF/35953132/product-jpeg.png&w=600&q=60" class="product-img" alt="sugar">
+                <div class="product-info">
+                    <span class="category-tag">Granulated Sugar</span>
+                    <h3>Sugar</h3>
+                    <P>Bulk stock of premium branded sugar good for health and taste.</P>
             <div class="product-card">
                 <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=60" class="product-img" alt="Cookies">
                 <div class="product-info">
@@ -225,6 +211,71 @@
     <div class="map-section">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13793.6424564567!2d74.4820!3d30.2100!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3917400000000000%3A0x0!2zMzDCsDEyJzM2LjAiTiA3NMKwMjgnNTUuMiJF!5e0!3m2!1sen!2sin!4v1620000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
+                    <section id="article-hub" style="display: flex; min-height: 500px; font-family: sans-serif; border: 1px solid #ddd; margin: 20px; border-radius: 8px; overflow: hidden;">
+    
+    <div style="width: 30%; background: #f4f4f4; border-right: 1px solid #ddd;">
+        <h3 style="padding: 15px; background: #2c3e50; color: white; margin: 0; font-size: 1.1rem;">Baghla Knowledge Hub</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li onclick="showArticle('sugar')" style="padding: 15px; border-bottom: 1px solid #ddd; cursor: pointer; transition: 0.3s;" onmouseover="this.style.background='#e9e9e9'" onmouseout="this.style.background='transparent'">
+                <strong>• Premium Sugar Guide</strong>
+            </li>
+            <li onclick="showArticle('pulses')" style="padding: 15px; border-bottom: 1px solid #ddd; cursor: pointer; transition: 0.3s;" onmouseover="this.style.background='#e9e9e9'" onmouseout="this.style.background='transparent'">
+                <strong>• Healthy Pulses (Dals)</strong>
+            </li>
+            <li onclick="showArticle('packed')" style="padding: 15px; border-bottom: 1px solid #ddd; cursor: pointer; transition: 0.3s;" onmouseover="this.style.background='#e9e9e9'" onmouseout="this.style.background='transparent'">
+                <strong>• Why Packed Goods?</strong>
+            </li>
+        </ul>
+    </div>
+
+    <div style="width: 70%; padding: 30px; background: white;" id="content-display">
+        <h2 style="color: #2c3e50;">Welcome to Baghla Trading Co.</h2>
+        <p style="font-size: 1.1rem; color: #555;">Select an article from the left to learn about our premium packed grocery standards.</p>
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80" alt="Grocery" style="width: 100%; border-radius: 5px; margin-top: 15px;">
+    </div>
+
+</section>
+
+<script>
+    const articles = {
+        sugar: `
+            <h2 style="color: #e67e22;">Why We Sell Sulfur-Free Sugar</h2>
+            <p>At <strong>Baghla Trading Co.</strong>, our sugar is processed without harmful chemicals. This ensures:</p>
+            <ul>
+                <li>Natural sweetness without chemical residue.</li>
+                <li>Hygienic machine-packing.</li>
+                <li>Clear, white crystals that dissolve instantly.</li>
+            </ul>
+            <p>Perfect for your morning tea or festive sweets!</p>
+        `,
+        pulses: `
+            <h2 style="color: #27ae60;">Nutritious & Unpolished Pulses</h2>
+            <p>We provide a variety of Dals that are protein-rich and laser-cleaned.</p>
+            <ul>
+                <li><strong>Moong Dal:</strong> Best for easy digestion.</li>
+                <li><strong>Toor Dal:</strong> The staple for every Indian home.</li>
+                <li><strong>Arhar Dal:</strong> Premium quality with no added colors.</li>
+            </ul>
+        `,
+        packed: `
+            <h2 style="color: #2980b9;">The Safety of Packed Goods</h2>
+            <p>We do not offer loose items or open produce like fruits and vegetables. Everything at Baghla Trading Co. is:</p>
+            <ul>
+                <li>Untouched by hands for maximum hygiene.</li>
+                <li>Clearly marked with FSSAI and Expiry dates.</li>
+                <li>Weight-guaranteed by factory standards.</li>
+            </ul>
+        `
+    };
+
+    function showArticle(id) {
+        document.getElementById('content-display').innerHTML = articles[id];
+        // Optional: Smooth scroll to content on mobile
+        if(window.innerWidth < 768) {
+            document.getElementById('content-display').scrollIntoView({behavior: 'smooth'});
+        }
+    }
+</script>
 
     <section class="section">
         <div class="form-container">
